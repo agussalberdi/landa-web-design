@@ -1,0 +1,58 @@
+.enter-y {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: opacity 1s, transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.enter-y-r {
+  transform: translateY(-50px);
+  opacity: 0;
+  transition: opacity 1s, transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.enter-x {
+  transform: translateX(50px);
+  opacity: 0;
+  transition: opacity 1s, transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.enter-x-r {
+  transform: translateX(-50px);
+  opacity: 0;
+  transition: opacity 1s, transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.show .delay-1,
+.ready #hero .delay-1 {
+  transition-delay: 0.2s !important;
+}
+.show .delay-2,
+.ready #hero .delay-2 {
+  transition-delay: 0.4s !important;
+}
+.show .delay-3,
+.ready #hero .delay-3 {
+  transition-delay: 0.6s !important;
+}
+.show .delay-4,
+.ready #hero .delay-4 {
+  transition-delay: 0.8s !important;
+}
+.show .delay-5,
+.ready #hero .delay-5 {
+  transition-delay: 1s !important;
+}
+.show .delay-6,
+.ready #hero .delay-6 {
+  transition-delay: 1.2s !important;
+}
+.show .enter-y,
+.show .enter-x,
+.show .enter-y-r,
+.show .enter-x-r {
+  opacity: 1;
+  transform: translate(0);
+}
+.ready #hero .enter-y,
+.ready #hero .enter-x,
+.ready #hero .enter-y-r,
+.ready #hero .enter-x-r {
+  opacity: 1;
+  transform: translate(0);
+}

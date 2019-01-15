@@ -1,0 +1,568 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  max-width: 100%;
+}
+
+.wrapper {
+  display: block;
+  position: relative;
+  width: 90%;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  z-index: 2;
+  text-align: center;
+  transition: all 500ms;
+}
+
+#logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 60px;
+}
+
+.menu a {
+  display: inline-block;
+  position: relative;
+  padding: 8px 10px;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.menu a span {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.menu a span:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  height: 2px;
+  width: 0%;
+  content: "";
+  background-color: #3a3a3a;
+  transition: all 0.3s cubic-bezier(0.05, 0.11, 0.54, 0.57);
+}
+
+.menu a:hover span::after {
+  width: 100%;
+}
+
+.menu a:hover {
+  color: #3a3a3a;
+}
+
+#contacto {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#contacto span {
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+header.scrolled {
+  background: #3a3a3a;
+  opacity: 0.9;
+}
+
+header.scrolled .menu a:hover {
+  color: #ff8576;
+}
+
+header.scrolled .menu a span:after {
+  background-color: #ff8576;
+}
+
+.hamburger {
+  display: none !important;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: white !important;
+}
+
+section {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 80px 0;
+}
+
+#hero {
+  background: url("../img/bkg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#hero .text {
+  display: block;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  width: 370px;
+  margin: 50px auto;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.text h4 {
+  font-weight: 600;
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.text p {
+  color: #e0d1d1;
+  font-size: 20px;
+}
+
+#nosotros {
+  background-color: #f5f5f5;
+}
+
+.slider {
+  width: 800px;
+}
+
+.slick-dots {
+  bottom: 0px !important;
+  text-align: left !important;
+  padding-left: 30px !important;
+}
+
+.slick-dots li {
+  height: 40px !important;
+}
+
+.slick-dots li button {
+  height: 40px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 50px !important;
+  content: "-" !important;
+  color: darkgray !important;
+}
+
+.box {
+  position: absolute;
+  right: 0px;
+  bottom: -50px;
+  width: 40%;
+  background-color: #fe9083;
+  color: #fff;
+  padding: 50px 40px;
+}
+
+.box h6 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.box p {
+  font-size: 15px;
+  padding: 50px 20px;
+  line-height: 2;
+}
+
+#container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -125px;
+  background: #fff;
+  z-index: 2;
+  text-align: center;
+  padding: 70px 0;
+}
+
+.item {
+  position: relative;
+  width: 20%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.item img,
+.item span {
+  display: block;
+  margin: 0 auto;
+}
+
+.item span {
+  font-weight: 600;
+  color: #716b6b;
+  margin-top: 20px;
+}
+
+.hidden-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 260px;
+  padding: 25px;
+  background: #3a3a3a;
+  z-index: 2;
+  transition: ease-in 300ms;
+  pointer-events: none;
+}
+
+.hidden-box p {
+  margin-top: 10px;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 2;
+  padding: 20px 0;
+}
+
+.item:hover .hidden-box {
+  transform: translateY(-120px);
+  left: -65px;
+  opacity: 1;
+}
+
+#clientes {
+  background-color: #f5f5f5;
+}
+
+h4.title {
+  display: block;
+  margin-bottom: 5px;
+  width: 30%;
+  color: #fe9083;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+}
+
+#clientes .empresas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 50px 0;
+}
+
+.empresas a {
+  width: 20%;
+}
+
+#contact {
+  background-color: #f5f5f5;
+}
+
+#formulario {
+  display: block;
+  position: relative;
+  background: #fff;
+  padding: 40px;
+  z-index: 2;
+}
+
+#formulario .title {
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+.form-item {
+  display: inline-block;
+  width: 50%;
+  margin-right: -4px;
+  position: relative;
+}
+
+.form-item label {
+  position: absolute;
+  pointer-events: none;
+  top: 15px;
+  margin-bottom: 10px;
+  color: #3a3a3a;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.form-item input,
+textarea {
+  display: block;
+  margin: 15px 5px;
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid #fe9083;
+  padding: 5px;
+}
+
+.form-item input:focus + label,
+.form-item input:not(:focus):valid + label,
+.form-item textarea:focus + label,
+.form-item textarea:not(:focus):valid + label {
+  color: #ff8576;
+  font-size: 16px;
+  top: 0;
+}
+
+.form-item textarea {
+  resize: none;
+  width: 100%;
+}
+
+.button {
+  display: block;
+  padding: 10px 30px;
+  background: #fe9083;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 500ms;
+}
+
+.button:hover {
+  color: #fe9083;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px #ff8576;
+}
+
+#contact > .box {
+  left: 0;
+  top: 0;
+  bottom: 150px;
+  z-index: 1;
+}
+
+footer {
+  display: block;
+  position: relative;
+  padding: 50px 0;
+  background: #3a3a3a;
+}
+
+.top {
+  display: block;
+  text-align: center;
+}
+
+.top p {
+  font-weight: 600;
+  color: #716b6b;
+  margin-bottom: 10px;
+}
+
+.top a {
+  color: #fe9083;
+  font-weight: 600;
+}
+
+.bottom {
+  display: block;
+  text-align: center;
+}
+
+.bottom .menu a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: #716b6b;
+}
+
+.bottom p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #716b6b;
+  margin-top: 10px;
+}
+
+.bottom p a {
+  text-decoration: underline;
+  transition: all 500ms;
+}
+
+.bottom p a:hover {
+  color: #fe9083;
+}
+
+#scrolldown {
+  position: absolute;
+  right: 100px;
+  bottom: 200px;
+  text-align: center;
+}
+
+#scrolldown span {
+  display: block;
+  color: #716b6b;
+  font-weight: 600;
+  margin-bottom: 25px;
+  transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 1000px) {
+  .hamburger {
+    display: block !important;
+    float: right !important;
+  }
+  header {
+    text-align: left;
+  }
+  #logo {
+    margin: 1% 0;
+  }
+  .menu {
+    display: none;
+  }
+  #contacto {
+    display: none;
+  }
+  header.is-active {
+    background: #3a3a3a;
+    opacity: 0.8;
+    min-height: 400px;
+  }
+  header.is-active .menu {
+    display: block;
+    position: absolute;
+    top: 50%x;
+    left: 0;
+    margin: 0;
+    transform: translateY(50%);
+    transition: all 500ms;
+  }
+  header.is-active .menu a {
+    display: block;
+  }
+  header.is-active .menu a:hover span {
+    color: #ff8576;
+  }
+  header.is-active .menu a:hover span::after {
+    background-color: #ff8576;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .slider {
+    width: 700px;
+  }
+  .slick-dots {
+    bottom: 0 !important;
+  }
+  .box {
+    bottom: -10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #container {
+    padding: 0;
+  }
+  .item {
+    width: 100%;
+  }
+  .item > img,
+  .item > span {
+    display: none;
+  }
+  .hidden-box {
+    display: block;
+    position: relative;
+    width: 100%;
+    opacity: 1;
+    border-bottom: 1px solid #ff8576;
+  }
+  .item:hover .hidden-box {
+    transform: translateY(0);
+    left: 0;
+  }
+  .slider {
+    width: 500px;
+  }
+  .box {
+    padding: 30px;
+    bottom: -70px;
+  }
+  .box p {
+    padding: 20px 10px;
+  }
+  .empresas a {
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  h4.title {
+    width: 50%;
+  }
+  .form-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .box {
+    display: block;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+  }
+  .slider {
+    margin-bottom: 0 !important;
+  }
+  .slick-dotted.slick-slider {
+    width: 100%;
+  }
+  #scrolldown {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header.is-active .menu {
+    transform: translateY(60%);
+  }
+  #logo {
+    width: 170px;
+    margin: 16px;
+    margin-right: 0;
+  }
+  #hero .text {
+    width: 100%;
+  }
+  .text h4 {
+    font-size: 30px;
+  }
+  .text p {
+    font-size: 18px;
+  }
+  h4.title {
+    width: 80%;
+  }
+  .empresas a {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
